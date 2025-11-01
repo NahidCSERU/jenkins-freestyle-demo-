@@ -1,0 +1,24 @@
+{
+  "name": "jenkins-freestyle-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+      "start": "node src/index.js",
+      "lint": "eslint .",
+      "test": "jest",
+      "test:unit": "jest tests/unit",
+      "test:integration": "jest tests/integration"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.39.0",
+    "jest": "^30.2.0",
+    "supertest": "^7.1.4"
+  }
+}
