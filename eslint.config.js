@@ -5,12 +5,18 @@ export default [
   {
     languageOptions: {
       globals: {
-        node: true,
-        jest: true,
+        // Node.js environment globals
+        require: true,
+        module: true,
+        console: true,
+        process: true,
+
+        // Jest (testing framework) globals
+        describe: true,
+        it: true,
+        test: true,
+        expect: true,
       },
-    },
-    rules: {
-      // নিজের নিয়ম চাইলে এখানে যোগ করো
     },
   },
 ];
