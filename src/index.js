@@ -3,11 +3,15 @@ const { sum } = require('./math');
 
 const app = express();
 
+// Root route - custom text/HTML
+app.get('/', (req, res) => {
+  res.send('<h1>Welcome to My Node.js App!</h1><p>This is a custom homepage.</p>');
+});
+
 app.get('/sum', (req, res) => {
   const a = Number(req.query.a);
   const b = Number(req.query.b);
   res.json({ result: sum(a, b) });
-  res.send('Hello API!');
 });
 
 if (require.main === module) {
