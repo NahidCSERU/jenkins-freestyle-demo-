@@ -7,6 +7,7 @@ app.get('/sum', (req, res) => {
   const a = Number(req.query.a);
   const b = Number(req.query.b);
   res.json({ result: sum(a, b) });
+  res.send('Hello API!');
 });
 
 if (require.main === module) {
